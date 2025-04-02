@@ -11,9 +11,9 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promauto"
 	"github.com/sourcegraph/conc/iter"
 
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/config"
-	"github.com/tonkeeper/tongo/liteapi"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/config"
+	"github.com/ice-blockchain/iongo/liteapi"
 	"go.uber.org/zap"
 )
 

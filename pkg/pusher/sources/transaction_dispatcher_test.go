@@ -4,10 +4,10 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/tonkeeper/opentonapi/internal/g"
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/abi"
-	"github.com/tonkeeper/tongo/ton"
+	"github.com/ice-blockchain/openionapi/internal/g"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/abi"
+	"github.com/ice-blockchain/iongo/ton"
 	"go.uber.org/zap"
 )
 

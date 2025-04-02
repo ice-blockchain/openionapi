@@ -3,8 +3,8 @@ package bath
 import (
 	"context"
 
-	"github.com/tonkeeper/opentonapi/pkg/core"
-	"github.com/tonkeeper/tongo"
+	"github.com/ice-blockchain/openionapi/pkg/core"
+	"github.com/ice-blockchain/iongo"
 )
 
 type ActionsList struct {

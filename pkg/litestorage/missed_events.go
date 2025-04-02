@@ -1,8 +1,8 @@
 package litestorage
 
 import (
-	"github.com/tonkeeper/opentonapi/pkg/oas"
-	"github.com/tonkeeper/tongo/ton"
+	"github.com/ice-blockchain/openionapi/pkg/oas"
+	"github.com/ice-blockchain/iongo/ton"
 	"golang.org/x/net/context"
 )
 

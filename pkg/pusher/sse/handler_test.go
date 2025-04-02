@@ -7,10 +7,10 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/tonkeeper/opentonapi/internal/g"
-	"github.com/tonkeeper/opentonapi/pkg/pusher/sources"
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/ton"
+	"github.com/ice-blockchain/openionapi/internal/g"
+	"github.com/ice-blockchain/openionapi/pkg/pusher/sources"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/ton"
 )
 
 type mockTxSource struct {

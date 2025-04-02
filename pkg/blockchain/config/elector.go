@@ -1,7 +1,7 @@
 package config
 
 import (
-	"github.com/tonkeeper/tongo"
+	"github.com/ice-blockchain/iongo"
 )
 
 func ElectorAddress() tongo.AccountID {

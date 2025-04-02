@@ -8,15 +8,15 @@ import (
 	"math/big"
 	"sort"
 
-	"github.com/tonkeeper/tongo/abi"
-	"github.com/tonkeeper/tongo/tlb"
-	"github.com/tonkeeper/tongo/ton"
+	"github.com/ice-blockchain/iongo/abi"
+	"github.com/ice-blockchain/iongo/tlb"
+	"github.com/ice-blockchain/iongo/ton"
+	"github.com/ice-blockchain/iongo"
 	"go.uber.org/zap"
 
-	"github.com/tonkeeper/opentonapi/internal/g"
-	"github.com/tonkeeper/opentonapi/pkg/core"
-	"github.com/tonkeeper/opentonapi/pkg/oas"
-	"github.com/tonkeeper/tongo"
+	"github.com/ice-blockchain/openionapi/internal/g"
+	"github.com/ice-blockchain/openionapi/pkg/core"
+	"github.com/ice-blockchain/openionapi/pkg/oas"
 )
 
 func blockIdExtFromString(s string) (tongo.BlockIDExt, error) {
@@ -524,17 +524,16 @@ func convertConfig(logger *zap.Logger, cfg tlb.ConfigParams) (*oas.BlockchainCon
 		}
 		config.R43 = oas.NewOptBlockchainConfig43(param43)
 	}
-	if blockchainConfig.ConfigParam44 == nil {
-		return nil, fmt.Errorf("config doesn't have %v param", 44)
-	}
-	for _, addr := range blockchainConfig.ConfigParam44.SuspendedAddressList.Addresses.Keys() {
-		accountID := ton.AccountID{
-			Workchain: int32(addr.Workchain),
-			Address:   addr.Address,
+	if blockchainConfig.ConfigParam44 != nil {
+		for _, addr := range blockchainConfig.ConfigParam44.SuspendedAddressList.Addresses.Keys() {
+			accountID := ton.AccountID{
+				Workchain: int32(addr.Workchain),
+				Address:   addr.Address,
+			}
+			config.R44.Accounts = append(config.R44.Accounts, accountID.String())
 		}
-		config.R44.Accounts = append(config.R44.Accounts, accountID.String())
+		config.R44.SetSuspendedUntil(int(blockchainConfig.ConfigParam44.SuspendedAddressList.SuspendedUntil))
 	}
-	config.R44.SetSuspendedUntil(int(blockchainConfig.ConfigParam44.SuspendedAddressList.SuspendedUntil))
 	if p45 := blockchainConfig.ConfigParam45; p45 != nil {
 		var param45 oas.BlockchainConfig45
 		for _, item := range p45.PrecompiledContractsConfig.List.Items() {

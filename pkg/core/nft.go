@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/shopspring/decimal"
-	"github.com/tonkeeper/tongo"
+	"github.com/ice-blockchain/iongo"
 )
 
 type NftItem struct {

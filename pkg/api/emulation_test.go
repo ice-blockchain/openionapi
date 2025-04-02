@@ -5,12 +5,12 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/tonkeeper/opentonapi/pkg/addressbook"
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/boc"
-	"github.com/tonkeeper/tongo/liteapi"
-	"github.com/tonkeeper/tongo/tlb"
-	"github.com/tonkeeper/tongo/ton"
+	"github.com/ice-blockchain/openionapi/pkg/addressbook"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/boc"
+	"github.com/ice-blockchain/iongo/liteapi"
+	"github.com/ice-blockchain/iongo/tlb"
+	"github.com/ice-blockchain/iongo/ton"
 )
 
 func TestHandler_isEmulationAllowed(t *testing.T) {

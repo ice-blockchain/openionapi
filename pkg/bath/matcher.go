@@ -3,9 +3,9 @@ package bath
 import (
 	"unsafe"
 
-	"github.com/tonkeeper/opentonapi/pkg/sentry"
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/abi"
+	"github.com/ice-blockchain/openionapi/pkg/sentry"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/abi"
 	"golang.org/x/exp/slices"
 )
 

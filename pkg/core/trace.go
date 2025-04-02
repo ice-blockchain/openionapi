@@ -4,12 +4,12 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
-	"github.com/tonkeeper/tongo/ton"
+	"github.com/ice-blockchain/iongo/ton"
 	"sync"
 
 	"github.com/shopspring/decimal"
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/abi"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/abi"
 	"golang.org/x/exp/maps"
 )
 

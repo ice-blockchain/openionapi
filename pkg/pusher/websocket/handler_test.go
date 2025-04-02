@@ -13,7 +13,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap"
 
-	"github.com/tonkeeper/opentonapi/pkg/pusher/sources"
+	"github.com/ice-blockchain/openionapi/pkg/pusher/sources"
 )
 
 type mockTxSource struct {

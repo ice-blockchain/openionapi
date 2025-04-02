@@ -1,6 +1,6 @@
 package core
 
-import "github.com/tonkeeper/tongo"
+import "github.com/ice-blockchain/iongo"
 
 // StorageProvider is a smart contract that accepts storage requests and manages payments from clients.
 type StorageProvider struct {

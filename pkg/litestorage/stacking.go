@@ -6,15 +6,15 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/tonkeeper/tongo/tlb"
-	"github.com/tonkeeper/tongo/ton"
+	"github.com/ice-blockchain/iongo/tlb"
+	"github.com/ice-blockchain/iongo/ton"
 
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/tonkeeper/opentonapi/pkg/core"
-	"github.com/tonkeeper/opentonapi/pkg/references"
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/abi"
+	"github.com/ice-blockchain/openionapi/pkg/core"
+	"github.com/ice-blockchain/openionapi/pkg/references"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/abi"
 )
 
 func (s *LiteStorage) GetWhalesPoolMemberInfo(ctx context.Context, pool, member tongo.AccountID) (core.Nominator, error) {

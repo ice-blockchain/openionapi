@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"hash/maphash"
 
-	"github.com/tonkeeper/tongo"
+	"github.com/ice-blockchain/iongo"
 )
 
 func hashBlockIDExt(seed maphash.Seed, s tongo.BlockIDExt) uint64 {

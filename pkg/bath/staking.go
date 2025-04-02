@@ -3,11 +3,11 @@ package bath
 import (
 	"math/big"
 
-	"github.com/tonkeeper/opentonapi/pkg/blockchain/config"
-	"github.com/tonkeeper/opentonapi/pkg/core"
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/abi"
-	"github.com/tonkeeper/tongo/ton"
+	"github.com/ice-blockchain/openionapi/pkg/blockchain/config"
+	"github.com/ice-blockchain/openionapi/pkg/core"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/abi"
+	"github.com/ice-blockchain/iongo/ton"
 )
 
 type BubbleElectionsDepositStake struct {

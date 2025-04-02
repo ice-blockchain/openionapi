@@ -1,8 +1,8 @@
 package references
 
 import (
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/ton"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/ton"
 )
 
 var RootDotTon = tongo.MustParseAccountID("0:b774d95eb20543f186c06b371ab88ad704f7e256130caf96189368a7d0cb6ccf")

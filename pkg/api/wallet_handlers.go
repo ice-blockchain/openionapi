@@ -7,14 +7,14 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/tonkeeper/opentonapi/pkg/core"
+	"github.com/ice-blockchain/openionapi/pkg/core"
 
-	"github.com/tonkeeper/opentonapi/pkg/oas"
-	"github.com/tonkeeper/opentonapi/pkg/wallet"
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/boc"
-	"github.com/tonkeeper/tongo/tlb"
-	tongoWallet "github.com/tonkeeper/tongo/wallet"
+	"github.com/ice-blockchain/openionapi/pkg/oas"
+	"github.com/ice-blockchain/openionapi/pkg/wallet"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/boc"
+	"github.com/ice-blockchain/iongo/tlb"
+	tongoWallet "github.com/ice-blockchain/iongo/wallet"
 )
 
 func (h *Handler) GetWalletsByPublicKey(ctx context.Context, params oas.GetWalletsByPublicKeyParams) (*oas.Accounts, error) {

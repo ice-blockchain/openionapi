@@ -4,8 +4,8 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/tonkeeper/opentonapi/pkg/oas"
-	"github.com/tonkeeper/tongo/liteclient"
+	"github.com/ice-blockchain/openionapi/pkg/oas"
+	"github.com/ice-blockchain/iongo/liteclient"
 )
 
 func toJson(target *string, source interface{ MarshalJSON() ([]byte, error) }) error {

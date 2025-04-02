@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/tonkeeper/opentonapi/internal/g"
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/abi"
-	"github.com/tonkeeper/tongo/tlb"
-	"github.com/tonkeeper/tongo/ton"
+	"github.com/ice-blockchain/openionapi/internal/g"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/abi"
+	"github.com/ice-blockchain/iongo/tlb"
+	"github.com/ice-blockchain/iongo/ton"
 )
 
 type BubbleJettonTransfer struct {

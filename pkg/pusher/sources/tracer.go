@@ -9,9 +9,9 @@ import (
 	"github.com/Narasimha1997/ratelimiter"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
-	"github.com/tonkeeper/opentonapi/pkg/cache"
-	"github.com/tonkeeper/opentonapi/pkg/core"
-	"github.com/tonkeeper/tongo"
+	"github.com/ice-blockchain/openionapi/pkg/cache"
+	"github.com/ice-blockchain/openionapi/pkg/core"
+	"github.com/ice-blockchain/iongo"
 	"go.uber.org/zap"
 )
 

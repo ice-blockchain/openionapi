@@ -4,7 +4,7 @@ import (
 	"math/big"
 
 	"github.com/shopspring/decimal"
-	"github.com/tonkeeper/tongo"
+	"github.com/ice-blockchain/iongo"
 )
 
 type JettonWallet struct {

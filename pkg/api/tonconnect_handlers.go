@@ -9,11 +9,11 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/tonkeeper/opentonapi/pkg/oas"
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/boc"
-	"github.com/tonkeeper/tongo/tlb"
-	"github.com/tonkeeper/tongo/tonconnect"
+	"github.com/ice-blockchain/openionapi/pkg/oas"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/boc"
+	"github.com/ice-blockchain/iongo/tlb"
+	"github.com/ice-blockchain/iongo/tonconnect"
 )
 
 func (h *Handler) GetTonConnectPayload(ctx context.Context) (*oas.GetTonConnectPayloadOK, error) {

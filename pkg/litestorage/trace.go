@@ -6,11 +6,11 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/abi"
-	"github.com/tonkeeper/tongo/boc"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/abi"
+	"github.com/ice-blockchain/iongo/boc"
 
-	"github.com/tonkeeper/opentonapi/pkg/core"
+	"github.com/ice-blockchain/openionapi/pkg/core"
 )
 
 const (

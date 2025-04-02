@@ -3,9 +3,9 @@ package litestorage
 import (
 	"context"
 
-	"github.com/tonkeeper/opentonapi/pkg/core"
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/tlb"
+	"github.com/ice-blockchain/openionapi/pkg/core"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/tlb"
 )
 
 func (s *LiteStorage) GetLogs(ctx context.Context, account tongo.AccountID, destination *tlb.MsgAddress, limit int, beforeLT uint64) ([]core.Message, error) {

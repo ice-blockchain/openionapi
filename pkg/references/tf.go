@@ -1,8 +1,8 @@
 package references
 
 import (
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/ton"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/ton"
 )
 
 const TFPoolImplementationsName = "TON Nominators"

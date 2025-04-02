@@ -8,12 +8,12 @@ import (
 	"math/big"
 	"reflect"
 
-	"github.com/tonkeeper/opentonapi/pkg/core"
-	"github.com/tonkeeper/tongo/ton"
+	"github.com/ice-blockchain/openionapi/pkg/core"
+	"github.com/ice-blockchain/iongo/ton"
 
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/abi"
-	"github.com/tonkeeper/tongo/tlb"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/abi"
+	"github.com/ice-blockchain/iongo/tlb"
 	"golang.org/x/exp/slices"
 )
 

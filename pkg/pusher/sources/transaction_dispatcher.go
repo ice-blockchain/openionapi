@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/abi"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/abi"
 	"go.uber.org/zap"
 )
 

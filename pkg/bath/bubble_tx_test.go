@@ -4,9 +4,9 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/tonkeeper/tongo"
+	"github.com/ice-blockchain/iongo"
 
-	"github.com/tonkeeper/opentonapi/pkg/core"
+	"github.com/ice-blockchain/openionapi/pkg/core"
 )
 
 func TestBubbleTx_ToAction(t *testing.T) {

@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/tonkeeper/opentonapi/pkg/cache"
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/tep64"
+	"github.com/ice-blockchain/openionapi/pkg/cache"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/tep64"
 )
 
 func (mc *metadataCache) getCollectionMeta(ctx context.Context, a tongo.AccountID) (tep64.Metadata, bool) {

@@ -7,12 +7,12 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/tonkeeper/opentonapi/pkg/bath"
-	"github.com/tonkeeper/opentonapi/pkg/core"
-	"github.com/tonkeeper/opentonapi/pkg/oas"
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/liteapi"
-	"github.com/tonkeeper/tongo/ton"
+	"github.com/ice-blockchain/openionapi/pkg/bath"
+	"github.com/ice-blockchain/openionapi/pkg/core"
+	"github.com/ice-blockchain/openionapi/pkg/oas"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/liteapi"
+	"github.com/ice-blockchain/iongo/ton"
 )
 
 func jettonPreview(master ton.AccountID, meta NormalizedMetadata, score int32) oas.JettonPreview {

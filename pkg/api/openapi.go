@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"context"
 	"github.com/go-faster/jx"
-	"github.com/tonkeeper/opentonapi/pkg/oas"
+	"github.com/ice-blockchain/openionapi/pkg/oas"
 	"net/http"
 	"os"
 )

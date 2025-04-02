@@ -1,8 +1,8 @@
 package api
 
 import (
-	"github.com/tonkeeper/opentonapi/pkg/addressbook"
-	"github.com/tonkeeper/tongo"
+	"github.com/ice-blockchain/openionapi/pkg/addressbook"
+	"github.com/ice-blockchain/iongo"
 )
 
 type mockAddressBook struct {

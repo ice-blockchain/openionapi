@@ -8,10 +8,10 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/require"
-	"github.com/tonkeeper/opentonapi/pkg/config"
-	"github.com/tonkeeper/opentonapi/pkg/litestorage"
-	"github.com/tonkeeper/tongo/liteapi"
-	"github.com/tonkeeper/tongo/ton"
+	"github.com/ice-blockchain/openionapi/pkg/config"
+	"github.com/ice-blockchain/openionapi/pkg/litestorage"
+	"github.com/ice-blockchain/iongo/liteapi"
+	"github.com/ice-blockchain/iongo/ton"
 	"go.uber.org/zap"
 )
 

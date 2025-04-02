@@ -1,7 +1,7 @@
 package verifier
 
 import (
-	"github.com/tonkeeper/tongo/ton"
+	"github.com/ice-blockchain/iongo/ton"
 )
 
 type SourceCompiler string

@@ -10,9 +10,9 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/liteapi"
-	"github.com/tonkeeper/tongo/tlb"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/liteapi"
+	"github.com/ice-blockchain/iongo/tlb"
 )
 
 func readFile[T any](filename string) (*T, error) {

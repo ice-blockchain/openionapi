@@ -3,10 +3,10 @@ package core
 import (
 	"context"
 
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/boc"
-	tcode "github.com/tonkeeper/tongo/code"
-	"github.com/tonkeeper/tongo/tlb"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/boc"
+	tcode "github.com/ice-blockchain/iongo/code"
+	"github.com/ice-blockchain/iongo/tlb"
 )
 
 // LibraryResolver provides a method to resolve libraries by their hashes.

@@ -10,7 +10,7 @@ import (
 	"github.com/ogen-go/ogen/ogenerrors"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
-	"github.com/tonkeeper/opentonapi/pkg/oas"
+	"github.com/ice-blockchain/openionapi/pkg/oas"
 	"go.uber.org/zap"
 )
 

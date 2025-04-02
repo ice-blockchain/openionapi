@@ -1,7 +1,7 @@
 package gasless
 
 import (
-	"github.com/tonkeeper/tongo/ton"
+	"github.com/ice-blockchain/iongo/ton"
 )
 
 type Config struct {

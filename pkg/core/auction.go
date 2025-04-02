@@ -1,6 +1,6 @@
 package core
 
-import "github.com/tonkeeper/tongo"
+import "github.com/ice-blockchain/iongo"
 
 type Auction struct {
 	Bids   int64

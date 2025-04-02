@@ -8,13 +8,13 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/tonkeeper/tongo/config"
+	"github.com/ice-blockchain/iongo/config"
 	"go.uber.org/zap"
 
-	"github.com/tonkeeper/opentonapi/pkg/oas"
-	"github.com/tonkeeper/opentonapi/pkg/pusher/sources"
-	"github.com/tonkeeper/opentonapi/pkg/pusher/sse"
-	"github.com/tonkeeper/opentonapi/pkg/pusher/websocket"
+	"github.com/ice-blockchain/openionapi/pkg/oas"
+	"github.com/ice-blockchain/openionapi/pkg/pusher/sources"
+	"github.com/ice-blockchain/openionapi/pkg/pusher/sse"
+	"github.com/ice-blockchain/openionapi/pkg/pusher/websocket"
 )
 
 // Server opens a port and exposes REST-ish API.

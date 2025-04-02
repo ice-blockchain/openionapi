@@ -1,8 +1,8 @@
 package core
 
 import (
-	"github.com/tonkeeper/tongo/abi"
-	"github.com/tonkeeper/tongo/ton"
+	"github.com/ice-blockchain/iongo/abi"
+	"github.com/ice-blockchain/iongo/ton"
 )
 
 type Multisig struct {

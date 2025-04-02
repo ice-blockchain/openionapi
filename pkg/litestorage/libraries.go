@@ -3,8 +3,8 @@ package litestorage
 import (
 	"context"
 
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/boc"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/boc"
 )
 
 func (s *LiteStorage) GetLibraries(ctx context.Context, libraries []tongo.Bits256) (map[tongo.Bits256]*boc.Cell, error) {

@@ -8,15 +8,15 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/tonkeeper/opentonapi/pkg/core"
-	"github.com/tonkeeper/tongo/ton"
+	"github.com/ice-blockchain/openionapi/pkg/core"
+	"github.com/ice-blockchain/iongo/ton"
 
-	"github.com/tonkeeper/tongo/contract/dns"
+	"github.com/ice-blockchain/iongo/contract/dns"
 
-	"github.com/tonkeeper/opentonapi/pkg/oas"
-	"github.com/tonkeeper/opentonapi/pkg/references"
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/tlb"
+	"github.com/ice-blockchain/openionapi/pkg/oas"
+	"github.com/ice-blockchain/openionapi/pkg/references"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/tlb"
 )
 
 // dnsResolver is a lazy initialization of DNS resolver.

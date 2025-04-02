@@ -5,12 +5,12 @@ import (
 	"strconv"
 
 	"github.com/shopspring/decimal"
-	"github.com/tonkeeper/opentonapi/pkg/addressbook"
-	"github.com/tonkeeper/opentonapi/pkg/core"
-	imgGenerator "github.com/tonkeeper/opentonapi/pkg/image"
-	"github.com/tonkeeper/opentonapi/pkg/references"
-	"github.com/tonkeeper/tongo/tep64"
-	"github.com/tonkeeper/tongo/tlb"
+	"github.com/ice-blockchain/openionapi/pkg/addressbook"
+	"github.com/ice-blockchain/openionapi/pkg/core"
+	imgGenerator "github.com/ice-blockchain/openionapi/pkg/image"
+	"github.com/ice-blockchain/openionapi/pkg/references"
+	"github.com/ice-blockchain/iongo/tep64"
+	"github.com/ice-blockchain/iongo/tlb"
 )
 
 const UnknownJettonName = "UKWN"

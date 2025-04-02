@@ -10,7 +10,7 @@ test:
 gen:
 	go generate
 collect_i18n:
-	goi18n extract -outdir pkg/api/i18n/translations -packagepath "github.com/tonkeeper/opentonapi/pkg/api/i18n" -messagetype M
+	goi18n extract -outdir pkg/api/i18n/translations -packagepath "github.com/ice-blockchain/openionapi/pkg/api/i18n" -messagetype M
 	#go run github.com/nicksnyder/go-i18n/v2/goi18n extract -outdir pkg/api/i18n/translations todo: switch to this version after https://github.com/nicksnyder/go-i18n/pull/295
 translate:
 	goi18n merge -outdir pkg/api/i18n/translations/ pkg/api/i18n/translations/active.en.toml  pkg/api/i18n/translations/active.ru.toml

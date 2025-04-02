@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/tonkeeper/tongo/tlb"
+	"github.com/ice-blockchain/iongo/tlb"
 )
 
 func TestScale(t *testing.T) {

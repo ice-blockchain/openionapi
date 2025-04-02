@@ -3,9 +3,9 @@ package wallet
 import (
 	"fmt"
 
-	"github.com/tonkeeper/tongo/boc"
-	"github.com/tonkeeper/tongo/tlb"
-	"github.com/tonkeeper/tongo/wallet"
+	"github.com/ice-blockchain/iongo/boc"
+	"github.com/ice-blockchain/iongo/tlb"
+	"github.com/ice-blockchain/iongo/wallet"
 )
 
 func GetVersionByCode(code []byte) (wallet.Version, error) {

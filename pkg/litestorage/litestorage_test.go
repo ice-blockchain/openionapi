@@ -7,14 +7,14 @@ import (
 
 	"github.com/puzpuzpuz/xsync/v2"
 	"github.com/stretchr/testify/require"
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/boc"
-	"github.com/tonkeeper/tongo/liteapi"
-	"github.com/tonkeeper/tongo/tlb"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/boc"
+	"github.com/ice-blockchain/iongo/liteapi"
+	"github.com/ice-blockchain/iongo/tlb"
 	"go.uber.org/zap"
 
-	"github.com/tonkeeper/opentonapi/pkg/blockchain/indexer"
-	"github.com/tonkeeper/opentonapi/pkg/core"
+	"github.com/ice-blockchain/openionapi/pkg/blockchain/indexer"
+	"github.com/ice-blockchain/openionapi/pkg/core"
 )
 
 func TestLiteStorage_run(t *testing.T) {

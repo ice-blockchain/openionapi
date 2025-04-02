@@ -1,6 +1,6 @@
 ## Packages and Structure
 
-This project utilizes [`OpenAPI Generator`](https://github.com/ogen-go/ogen) (`ogen`), a tool for generating Go code from OpenAPI v3 specifications, and the [`Tongo`](https://github.com/tonkeeper/tongo) package, a Golang SDK developed by the Tonkeeper team for working with the TON blockchain. These two libraries are central to how the project communicates with the TON blockchain and manages APIs. In addition to these, there are several other packages developed specifically for this project, which we will explain in more detail throughout this document.
+This project utilizes [`OpenAPI Generator`](https://github.com/ogen-go/ogen) (`ogen`), a tool for generating Go code from OpenAPI v3 specifications, and the [`Tongo`](https://github.com/ice-blockchain/iongo) package, a Golang SDK developed by the Tonkeeper team for working with the TON blockchain. These two libraries are central to how the project communicates with the TON blockchain and manages APIs. In addition to these, there are several other packages developed specifically for this project, which we will explain in more detail throughout this document.
 
 ## Entry Point
 The entry point for running the application is located in the `cmd/api/main.go` file. it's where the application starts when executed.

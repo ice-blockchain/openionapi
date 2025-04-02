@@ -1,7 +1,7 @@
 package core
 
 import (
-	"github.com/tonkeeper/tongo/tlb"
+	"github.com/ice-blockchain/iongo/tlb"
 )
 
 type ExtraCurrencies map[int32]tlb.VarUInteger32

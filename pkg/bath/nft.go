@@ -3,8 +3,8 @@ package bath
 import (
 	"fmt"
 
-	"github.com/tonkeeper/opentonapi/internal/g"
-	"github.com/tonkeeper/tongo/abi"
+	"github.com/ice-blockchain/openionapi/internal/g"
+	"github.com/ice-blockchain/iongo/abi"
 )
 
 var NftTransferNotifyStraw = Straw[BubbleNftTransfer]{

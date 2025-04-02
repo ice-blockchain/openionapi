@@ -1,6 +1,6 @@
 package references
 
-import "github.com/tonkeeper/tongo"
+import "github.com/ice-blockchain/iongo"
 
 type WhalesPoolInfo struct {
 	Name         string

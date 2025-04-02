@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/caarlos0/env/v6"
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/config"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/config"
 )
 
 type Config struct {

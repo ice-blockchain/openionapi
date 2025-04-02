@@ -3,10 +3,10 @@ package core
 import (
 	"math/big"
 
-	"github.com/tonkeeper/tongo/abi"
-	"github.com/tonkeeper/tongo/ton"
+	"github.com/ice-blockchain/iongo/abi"
+	"github.com/ice-blockchain/iongo/ton"
 
-	"github.com/tonkeeper/tongo/tlb"
+	"github.com/ice-blockchain/iongo/tlb"
 )
 
 // Account holds low-level details about a particular account taken directly from the blockchain.

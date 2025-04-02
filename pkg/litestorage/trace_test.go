@@ -6,9 +6,9 @@ import (
 
 	"github.com/puzpuzpuz/xsync/v2"
 	"github.com/stretchr/testify/require"
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/abi"
-	"github.com/tonkeeper/tongo/liteapi"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/abi"
+	"github.com/ice-blockchain/iongo/liteapi"
 )
 
 func TestLiteStorage_getAccountInterfaces(t *testing.T) {

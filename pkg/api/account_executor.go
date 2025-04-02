@@ -8,13 +8,13 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/boc"
-	"github.com/tonkeeper/tongo/tlb"
-	"github.com/tonkeeper/tongo/tvm"
-	"github.com/tonkeeper/tongo/tvm/precompiled"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/boc"
+	"github.com/ice-blockchain/iongo/tlb"
+	"github.com/ice-blockchain/iongo/tvm"
+	"github.com/ice-blockchain/iongo/tvm/precompiled"
 
-	"github.com/tonkeeper/opentonapi/pkg/core"
+	"github.com/ice-blockchain/openionapi/pkg/core"
 )
 
 var precompileUsageMc = promauto.NewCounterVec(prometheus.CounterOpts{

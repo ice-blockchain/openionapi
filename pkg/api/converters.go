@@ -11,18 +11,18 @@ import (
 	"strings"
 	"unicode"
 
-	imgGenerator "github.com/tonkeeper/opentonapi/pkg/image"
-	"github.com/tonkeeper/opentonapi/pkg/references"
+	imgGenerator "github.com/ice-blockchain/openionapi/pkg/image"
+	"github.com/ice-blockchain/openionapi/pkg/references"
 
 	"github.com/go-faster/jx"
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/boc"
-	"github.com/tonkeeper/tongo/tlb"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/boc"
+	"github.com/ice-blockchain/iongo/tlb"
 	"google.golang.org/grpc/status"
 
-	"github.com/tonkeeper/opentonapi/pkg/core"
-	"github.com/tonkeeper/opentonapi/pkg/oas"
-	walletPkg "github.com/tonkeeper/opentonapi/pkg/wallet"
+	"github.com/ice-blockchain/openionapi/pkg/core"
+	"github.com/ice-blockchain/openionapi/pkg/oas"
+	walletPkg "github.com/ice-blockchain/openionapi/pkg/wallet"
 )
 
 // ErrorWithExtendedCode helps to pass additional information about an error.

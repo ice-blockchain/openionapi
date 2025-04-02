@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/ton"
+	tongo "github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/ton"
 )
 
 type ChainState struct {

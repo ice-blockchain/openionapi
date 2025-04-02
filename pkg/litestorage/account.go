@@ -4,14 +4,14 @@ import (
 	"context"
 	"crypto/ed25519"
 	"errors"
-	"github.com/tonkeeper/tongo/abi"
+	"github.com/ice-blockchain/iongo/abi"
 	"time"
 
-	"github.com/tonkeeper/tongo/tlb"
-	tongoWallet "github.com/tonkeeper/tongo/wallet"
+	"github.com/ice-blockchain/iongo/tlb"
+	tongoWallet "github.com/ice-blockchain/iongo/wallet"
 
-	"github.com/tonkeeper/opentonapi/pkg/core"
-	"github.com/tonkeeper/tongo"
+	"github.com/ice-blockchain/openionapi/pkg/core"
+	"github.com/ice-blockchain/iongo"
 )
 
 func (s *LiteStorage) GetSubscriptions(ctx context.Context, address tongo.AccountID) ([]core.Subscription, error) {

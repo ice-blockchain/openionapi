@@ -10,12 +10,12 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/ton"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/ton"
 	"go.uber.org/zap"
 	"golang.org/x/exp/maps"
 
-	"github.com/tonkeeper/opentonapi/pkg/blockchain"
+	"github.com/ice-blockchain/openionapi/pkg/blockchain"
 )
 
 var testAccount1 = ton.MustParseAccountID("0:0a95e1d4ebe7860d051f8b861730dbdee1440fd11180211914e0089146580351")

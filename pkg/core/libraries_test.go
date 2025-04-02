@@ -5,8 +5,8 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/tonkeeper/tongo/boc"
-	"github.com/tonkeeper/tongo/liteapi"
+	"github.com/ice-blockchain/iongo/boc"
+	"github.com/ice-blockchain/iongo/liteapi"
 )
 
 func TestPrepareLibraries(t *testing.T) {

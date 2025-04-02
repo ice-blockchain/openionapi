@@ -2,9 +2,9 @@ package api
 
 import (
 	"context"
-	"github.com/tonkeeper/opentonapi/pkg/references"
+	"github.com/ice-blockchain/openionapi/pkg/references"
 
-	"github.com/tonkeeper/opentonapi/pkg/oas"
+	"github.com/ice-blockchain/openionapi/pkg/oas"
 )
 
 func (h *Handler) GetExtraCurrencyInfo(ctx context.Context, params oas.GetExtraCurrencyInfoParams) (*oas.EcPreview, error) {

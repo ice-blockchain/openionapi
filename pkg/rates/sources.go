@@ -7,9 +7,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/tonkeeper/opentonapi/pkg/references"
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/ton"
+	"github.com/ice-blockchain/openionapi/pkg/references"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/ton"
 	"go.uber.org/zap"
 )
 

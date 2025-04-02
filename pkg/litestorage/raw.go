@@ -3,9 +3,9 @@ package litestorage
 import (
 	"context"
 
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/liteapi"
-	"github.com/tonkeeper/tongo/liteclient"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/liteapi"
+	"github.com/ice-blockchain/iongo/liteclient"
 )
 
 func (s *LiteStorage) GetMasterchainInfoRaw(ctx context.Context) (liteclient.LiteServerMasterchainInfoC, error) {

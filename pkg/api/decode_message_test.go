@@ -5,10 +5,10 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/tonkeeper/opentonapi/pkg/litestorage"
-	"github.com/tonkeeper/opentonapi/pkg/oas"
-	pkgTesting "github.com/tonkeeper/opentonapi/pkg/testing"
-	"github.com/tonkeeper/tongo/liteapi"
+	"github.com/ice-blockchain/openionapi/pkg/litestorage"
+	"github.com/ice-blockchain/openionapi/pkg/oas"
+	pkgTesting "github.com/ice-blockchain/openionapi/pkg/testing"
+	"github.com/ice-blockchain/iongo/liteapi"
 	"go.uber.org/zap"
 )
 

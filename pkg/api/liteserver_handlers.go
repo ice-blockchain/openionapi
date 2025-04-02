@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/tonkeeper/opentonapi/pkg/oas"
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/liteclient"
+	"github.com/ice-blockchain/openionapi/pkg/oas"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/liteclient"
 )
 
 func (h *Handler) GetRawMasterchainInfo(ctx context.Context) (*oas.GetRawMasterchainInfoOK, error) {

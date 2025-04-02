@@ -22,7 +22,7 @@ The "heartbeat" event occurs every 5 seconds when nothing else happens
 and is a signal that everything is OK with an underlying TCP connection. 
 The "message" event carries important information and its "data" always contains a JSON representation of a message.
 
-[A golang example](https://github.com/tonkeeper/opentonapi/tree/master/examples/golang/sse) of working with SSE method.
+[A golang example](https://github.com/ice-blockchain/openionapi/tree/master/examples/golang/sse) of working with SSE method.
 
 ### Real-time notifications about transactions
 
@@ -58,7 +58,7 @@ Supported methods are:
 * **subscribe_account**
 * **subscribe_mempool**
 
-[A golang example](https://github.com/tonkeeper/opentonapi/tree/master/examples/golang/websocket) of working with websocket.
+[A golang example](https://github.com/ice-blockchain/openionapi/tree/master/examples/golang/websocket) of working with websocket.
 
 ### "subscribe_account" method
 `subscribe_account` takes in a list of account IDs as "params" argument 

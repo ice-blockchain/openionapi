@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/tonkeeper/tongo/boc"
+	"github.com/ice-blockchain/iongo/boc"
 )
 
 // deserializeBoc tries to deserialize boc string in base64 or hex format.

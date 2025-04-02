@@ -11,7 +11,7 @@ To run the project using Docker, follow these steps:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/tonkeeper/opentonapi.git
+git clone https://github.com/ice-blockchain/openionapi.git
 ```
 
 ### 2. Build the Docker image
@@ -57,7 +57,7 @@ go version
 Clone the OpenTonAPI repository:
 
 ```bash
-git clone https://github.com/tonkeeper/opentonapi.git
+git clone https://github.com/ice-blockchain/openionapi.git
 ```
 
 Navigate into the project directory:

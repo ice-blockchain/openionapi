@@ -1,4 +1,4 @@
-module github.com/tonkeeper/opentonapi
+module github.com/ice-blockchain/openionapi
 
 go 1.23.0
 
@@ -16,6 +16,7 @@ require (
 	github.com/go-faster/errors v0.7.1
 	github.com/go-faster/jx v1.1.0
 	github.com/gorilla/websocket v1.5.1
+	github.com/ice-blockchain/iongo v1.15.5
 	github.com/nicksnyder/go-i18n/v2 v2.2.1
 	github.com/ogen-go/ogen v1.0.0
 	github.com/prometheus/client_golang v1.14.0
@@ -24,7 +25,6 @@ require (
 	github.com/sourcegraph/conc v0.3.0
 	github.com/stretchr/testify v1.9.0
 	github.com/tonkeeper/scam_backoffice_rules v0.0.1
-	github.com/tonkeeper/tongo v1.15.1-0.20250401165811-552b41d5558b
 	go.opentelemetry.io/otel v1.24.0
 	go.opentelemetry.io/otel/metric v1.24.0
 	go.opentelemetry.io/otel/trace v1.24.0
@@ -59,6 +59,7 @@ require (
 	github.com/prometheus/procfs v0.8.0 // indirect
 	github.com/segmentio/asm v1.2.0 // indirect
 	github.com/snksoft/crc v1.1.0 // indirect
+	github.com/tonkeeper/tongo v1.2.2 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasttemplate v1.2.2 // indirect
 	golang.org/x/crypto v0.35.0 // indirect

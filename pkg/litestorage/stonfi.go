@@ -3,9 +3,9 @@ package litestorage
 import (
 	"context"
 
-	"github.com/tonkeeper/opentonapi/pkg/core"
-	"github.com/tonkeeper/tongo"
-	"github.com/tonkeeper/tongo/abi"
+	"github.com/ice-blockchain/openionapi/pkg/core"
+	"github.com/ice-blockchain/iongo"
+	"github.com/ice-blockchain/iongo/abi"
 )
 
 func (s *LiteStorage) STONfiPools(ctx context.Context, poolIDs []core.STONfiPoolID) (map[tongo.AccountID]core.STONfiPool, error) {

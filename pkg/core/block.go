@@ -1,7 +1,7 @@
 package core
 
 import (
-	"github.com/tonkeeper/tongo"
+	"github.com/ice-blockchain/iongo"
 )
 
 // BlockHeader contains information extracted from a block.

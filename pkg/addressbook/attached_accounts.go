@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/tonkeeper/opentonapi/pkg/core"
-	imgGenerator "github.com/tonkeeper/opentonapi/pkg/image"
-	"github.com/tonkeeper/opentonapi/pkg/references"
+	"github.com/ice-blockchain/openionapi/pkg/core"
+	imgGenerator "github.com/ice-blockchain/openionapi/pkg/image"
+	"github.com/ice-blockchain/openionapi/pkg/references"
 	rules "github.com/tonkeeper/scam_backoffice_rules"
-	"github.com/tonkeeper/tongo/ton"
+	"github.com/ice-blockchain/iongo/ton"
 )
 
 // AttachedAccountType represents the type of the attached account

@@ -5,11 +5,11 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/tonkeeper/tongo/boc"
-	"github.com/tonkeeper/tongo/tlb"
+	"github.com/ice-blockchain/iongo/boc"
+	"github.com/ice-blockchain/iongo/tlb"
 	"go.uber.org/zap"
 
-	pkgTesting "github.com/tonkeeper/opentonapi/pkg/testing"
+	pkgTesting "github.com/ice-blockchain/openionapi/pkg/testing"
 )
 
 func Test_convertConfig(t *testing.T) {

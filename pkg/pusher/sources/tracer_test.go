@@ -4,11 +4,11 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/tonkeeper/tongo"
+	"github.com/ice-blockchain/iongo"
 	"go.uber.org/zap"
 
-	"github.com/tonkeeper/opentonapi/pkg/cache"
-	"github.com/tonkeeper/opentonapi/pkg/core"
+	"github.com/ice-blockchain/openionapi/pkg/cache"
+	"github.com/ice-blockchain/openionapi/pkg/core"
 )
 
 func TestTracer_putTraceInCache(t1 *testing.T) {

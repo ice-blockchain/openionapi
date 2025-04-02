@@ -3,7 +3,7 @@ package core
 import (
 	"math"
 
-	"github.com/tonkeeper/tongo"
+	"github.com/ice-blockchain/iongo"
 )
 
 type Nominator struct {

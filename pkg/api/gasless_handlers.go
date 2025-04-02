@@ -9,9 +9,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/tonkeeper/opentonapi/pkg/gasless"
-	"github.com/tonkeeper/opentonapi/pkg/oas"
-	"github.com/tonkeeper/tongo/ton"
+	"github.com/ice-blockchain/openionapi/pkg/gasless"
+	"github.com/ice-blockchain/openionapi/pkg/oas"
+	"github.com/ice-blockchain/iongo/ton"
 	"google.golang.org/grpc/metadata"
 )
 
