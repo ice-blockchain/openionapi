@@ -2049,24 +2049,40 @@
      "22": {
       "description": "The limits on the block in the masterchain, upon reaching which the block is finalized and the callback of the remaining messages (if any) is carried over to the next block.",
       "properties": {
-       "block_limits": {
-        "$ref": "#/components/schemas/BlockLimits"
+       "bytes": {
+        "$ref": "#/components/schemas/BlockParamLimits"
+       },
+       "gas": {
+        "$ref": "#/components/schemas/BlockParamLimits"
+       },
+       "lt_delta": {
+        "$ref": "#/components/schemas/BlockParamLimits"
        }
       },
       "required": [
-       "block_limits"
+       "bytes",
+       "gas",
+       "lt_delta"
       ],
       "type": "object"
      },
      "23": {
       "description": "The limits on the block in the basechains, upon reaching which the block is finalized and the callback of the remaining messages (if any) is carried over to the next block.",
       "properties": {
-       "block_limits": {
-        "$ref": "#/components/schemas/BlockLimits"
+       "bytes": {
+        "$ref": "#/components/schemas/BlockParamLimits"
+       },
+       "gas": {
+        "$ref": "#/components/schemas/BlockParamLimits"
+       },
+       "lt_delta": {
+        "$ref": "#/components/schemas/BlockParamLimits"
        }
       },
       "required": [
-       "block_limits"
+       "bytes",
+       "gas",
+       "lt_delta"
       ],
       "type": "object"
      },

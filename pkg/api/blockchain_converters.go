@@ -8,10 +8,10 @@ import (
 	"math/big"
 	"sort"
 
+	tongo "github.com/ice-blockchain/iongo"
 	"github.com/ice-blockchain/iongo/abi"
 	"github.com/ice-blockchain/iongo/tlb"
 	"github.com/ice-blockchain/iongo/ton"
-	"github.com/ice-blockchain/iongo"
 	"go.uber.org/zap"
 
 	"github.com/ice-blockchain/openionapi/internal/g"
@@ -479,14 +479,20 @@ func convertConfig(logger *zap.Logger, cfg tlb.ConfigParams) (*oas.BlockchainCon
 		config.R21 = oas.NewOptBlockchainConfig21(param21)
 	}
 	if p22 := blockchainConfig.ConfigParam22; p22 != nil {
+		bytes, gas, ltDelta := convertBlockLimits(p22.BlockLimits)
 		param22 := oas.BlockchainConfig22{
-			BlockLimits: convertBlockLimits(p22.BlockLimits),
+			Bytes:   bytes,
+			Gas:     gas,
+			LtDelta: ltDelta,
 		}
 		config.R22 = oas.NewOptBlockchainConfig22(param22)
 	}
 	if p23 := blockchainConfig.ConfigParam23; p23 != nil {
+		bytes, gas, ltDelta := convertBlockLimits(p23.BlockLimits)
 		param23 := oas.BlockchainConfig23{
-			BlockLimits: convertBlockLimits(p23.BlockLimits),
+			Bytes:   bytes,
+			Gas:     gas,
+			LtDelta: ltDelta,
 		}
 		config.R23 = oas.NewOptBlockchainConfig23(param23)
 	}
@@ -792,24 +798,22 @@ func convertMsgForwardPrices(prices tlb.MsgForwardPrices) oas.MsgForwardPrices {
 	}
 }
 
-func convertBlockLimits(limits tlb.BlockLimits) oas.BlockLimits {
-	return oas.BlockLimits{
-		Bytes: oas.BlockParamLimits{
+func convertBlockLimits(limits tlb.BlockLimits) (oas.BlockParamLimits, oas.BlockParamLimits, oas.BlockParamLimits) {
+	return oas.BlockParamLimits{
 			Underload: int64(limits.Bytes.Underload),
 			SoftLimit: int64(limits.Bytes.SoftLimit),
 			HardLimit: int64(limits.Bytes.HardLimit),
 		},
-		Gas: oas.BlockParamLimits{
+		oas.BlockParamLimits{
 			Underload: int64(limits.Gas.Underload),
 			SoftLimit: int64(limits.Gas.SoftLimit),
 			HardLimit: int64(limits.Gas.HardLimit),
 		},
-		LtDelta: oas.BlockParamLimits{
+		oas.BlockParamLimits{
 			Underload: int64(limits.LtDelta.Underload),
 			SoftLimit: int64(limits.LtDelta.SoftLimit),
 			HardLimit: int64(limits.LtDelta.HardLimit),
-		},
-	}
+		}
 }
 
 func convertPricesAndPricesExt(prices tlb.GasLimitsPrices) (oas.GasLimitPrices, bool) {

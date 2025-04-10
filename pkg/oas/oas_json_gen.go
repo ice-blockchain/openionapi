@@ -3877,130 +3877,6 @@ func (s *BlockCurrencyCollectionOtherItem) UnmarshalJSON(data []byte) error {
 }
 
 // Encode implements json.Marshaler.
-func (s *BlockLimits) Encode(e *jx.Encoder) {
-	e.ObjStart()
-	s.encodeFields(e)
-	e.ObjEnd()
-}
-
-// encodeFields encodes fields.
-func (s *BlockLimits) encodeFields(e *jx.Encoder) {
-	{
-		e.FieldStart("bytes")
-		s.Bytes.Encode(e)
-	}
-	{
-		e.FieldStart("gas")
-		s.Gas.Encode(e)
-	}
-	{
-		e.FieldStart("lt_delta")
-		s.LtDelta.Encode(e)
-	}
-}
-
-var jsonFieldsNameOfBlockLimits = [3]string{
-	0: "bytes",
-	1: "gas",
-	2: "lt_delta",
-}
-
-// Decode decodes BlockLimits from json.
-func (s *BlockLimits) Decode(d *jx.Decoder) error {
-	if s == nil {
-		return errors.New("invalid: unable to decode BlockLimits to nil")
-	}
-	var requiredBitSet [1]uint8
-
-	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
-		switch string(k) {
-		case "bytes":
-			requiredBitSet[0] |= 1 << 0
-			if err := func() error {
-				if err := s.Bytes.Decode(d); err != nil {
-					return err
-				}
-				return nil
-			}(); err != nil {
-				return errors.Wrap(err, "decode field \"bytes\"")
-			}
-		case "gas":
-			requiredBitSet[0] |= 1 << 1
-			if err := func() error {
-				if err := s.Gas.Decode(d); err != nil {
-					return err
-				}
-				return nil
-			}(); err != nil {
-				return errors.Wrap(err, "decode field \"gas\"")
-			}
-		case "lt_delta":
-			requiredBitSet[0] |= 1 << 2
-			if err := func() error {
-				if err := s.LtDelta.Decode(d); err != nil {
-					return err
-				}
-				return nil
-			}(); err != nil {
-				return errors.Wrap(err, "decode field \"lt_delta\"")
-			}
-		default:
-			return d.Skip()
-		}
-		return nil
-	}); err != nil {
-		return errors.Wrap(err, "decode BlockLimits")
-	}
-	// Validate required fields.
-	var failures []validate.FieldError
-	for i, mask := range [1]uint8{
-		0b00000111,
-	} {
-		if result := (requiredBitSet[i] & mask) ^ mask; result != 0 {
-			// Mask only required fields and check equality to mask using XOR.
-			//
-			// If XOR result is not zero, result is not equal to expected, so some fields are missed.
-			// Bits of fields which would be set are actually bits of missed fields.
-			missed := bits.OnesCount8(result)
-			for bitN := 0; bitN < missed; bitN++ {
-				bitIdx := bits.TrailingZeros8(result)
-				fieldIdx := i*8 + bitIdx
-				var name string
-				if fieldIdx < len(jsonFieldsNameOfBlockLimits) {
-					name = jsonFieldsNameOfBlockLimits[fieldIdx]
-				} else {
-					name = strconv.Itoa(fieldIdx)
-				}
-				failures = append(failures, validate.FieldError{
-					Name:  name,
-					Error: validate.ErrFieldRequired,
-				})
-				// Reset bit.
-				result &^= 1 << bitIdx
-			}
-		}
-	}
-	if len(failures) > 0 {
-		return &validate.Error{Fields: failures}
-	}
-
-	return nil
-}
-
-// MarshalJSON implements stdjson.Marshaler.
-func (s *BlockLimits) MarshalJSON() ([]byte, error) {
-	e := jx.Encoder{}
-	s.Encode(&e)
-	return e.Bytes(), nil
-}
-
-// UnmarshalJSON implements stdjson.Unmarshaler.
-func (s *BlockLimits) UnmarshalJSON(data []byte) error {
-	d := jx.DecodeBytes(data)
-	return s.Decode(d)
-}
-
-// Encode implements json.Marshaler.
 func (s *BlockParamLimits) Encode(e *jx.Encoder) {
 	e.ObjStart()
 	s.encodeFields(e)
@@ -7987,13 +7863,23 @@ func (s *BlockchainConfig22) Encode(e *jx.Encoder) {
 // encodeFields encodes fields.
 func (s *BlockchainConfig22) encodeFields(e *jx.Encoder) {
 	{
-		e.FieldStart("block_limits")
-		s.BlockLimits.Encode(e)
+		e.FieldStart("bytes")
+		s.Bytes.Encode(e)
+	}
+	{
+		e.FieldStart("gas")
+		s.Gas.Encode(e)
+	}
+	{
+		e.FieldStart("lt_delta")
+		s.LtDelta.Encode(e)
 	}
 }
 
-var jsonFieldsNameOfBlockchainConfig22 = [1]string{
-	0: "block_limits",
+var jsonFieldsNameOfBlockchainConfig22 = [3]string{
+	0: "bytes",
+	1: "gas",
+	2: "lt_delta",
 }
 
 // Decode decodes BlockchainConfig22 from json.
@@ -8005,15 +7891,35 @@ func (s *BlockchainConfig22) Decode(d *jx.Decoder) error {
 
 	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
 		switch string(k) {
-		case "block_limits":
+		case "bytes":
 			requiredBitSet[0] |= 1 << 0
 			if err := func() error {
-				if err := s.BlockLimits.Decode(d); err != nil {
+				if err := s.Bytes.Decode(d); err != nil {
 					return err
 				}
 				return nil
 			}(); err != nil {
-				return errors.Wrap(err, "decode field \"block_limits\"")
+				return errors.Wrap(err, "decode field \"bytes\"")
+			}
+		case "gas":
+			requiredBitSet[0] |= 1 << 1
+			if err := func() error {
+				if err := s.Gas.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"gas\"")
+			}
+		case "lt_delta":
+			requiredBitSet[0] |= 1 << 2
+			if err := func() error {
+				if err := s.LtDelta.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"lt_delta\"")
 			}
 		default:
 			return d.Skip()
@@ -8025,7 +7931,7 @@ func (s *BlockchainConfig22) Decode(d *jx.Decoder) error {
 	// Validate required fields.
 	var failures []validate.FieldError
 	for i, mask := range [1]uint8{
-		0b00000001,
+		0b00000111,
 	} {
 		if result := (requiredBitSet[i] & mask) ^ mask; result != 0 {
 			// Mask only required fields and check equality to mask using XOR.
@@ -8081,13 +7987,23 @@ func (s *BlockchainConfig23) Encode(e *jx.Encoder) {
 // encodeFields encodes fields.
 func (s *BlockchainConfig23) encodeFields(e *jx.Encoder) {
 	{
-		e.FieldStart("block_limits")
-		s.BlockLimits.Encode(e)
+		e.FieldStart("bytes")
+		s.Bytes.Encode(e)
+	}
+	{
+		e.FieldStart("gas")
+		s.Gas.Encode(e)
+	}
+	{
+		e.FieldStart("lt_delta")
+		s.LtDelta.Encode(e)
 	}
 }
 
-var jsonFieldsNameOfBlockchainConfig23 = [1]string{
-	0: "block_limits",
+var jsonFieldsNameOfBlockchainConfig23 = [3]string{
+	0: "bytes",
+	1: "gas",
+	2: "lt_delta",
 }
 
 // Decode decodes BlockchainConfig23 from json.
@@ -8099,15 +8015,35 @@ func (s *BlockchainConfig23) Decode(d *jx.Decoder) error {
 
 	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
 		switch string(k) {
-		case "block_limits":
+		case "bytes":
 			requiredBitSet[0] |= 1 << 0
 			if err := func() error {
-				if err := s.BlockLimits.Decode(d); err != nil {
+				if err := s.Bytes.Decode(d); err != nil {
 					return err
 				}
 				return nil
 			}(); err != nil {
-				return errors.Wrap(err, "decode field \"block_limits\"")
+				return errors.Wrap(err, "decode field \"bytes\"")
+			}
+		case "gas":
+			requiredBitSet[0] |= 1 << 1
+			if err := func() error {
+				if err := s.Gas.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"gas\"")
+			}
+		case "lt_delta":
+			requiredBitSet[0] |= 1 << 2
+			if err := func() error {
+				if err := s.LtDelta.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"lt_delta\"")
 			}
 		default:
 			return d.Skip()
@@ -8119,7 +8055,7 @@ func (s *BlockchainConfig23) Decode(d *jx.Decoder) error {
 	// Validate required fields.
 	var failures []validate.FieldError
 	for i, mask := range [1]uint8{
-		0b00000001,
+		0b00000111,
 	} {
 		if result := (requiredBitSet[i] & mask) ^ mask; result != 0 {
 			// Mask only required fields and check equality to mask using XOR.

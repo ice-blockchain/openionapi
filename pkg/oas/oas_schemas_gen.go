@@ -1657,43 +1657,6 @@ func (s *BlockCurrencyCollectionOtherItem) SetValue(val string) {
 	s.Value = val
 }
 
-// Ref: #/components/schemas/BlockLimits
-type BlockLimits struct {
-	Bytes   BlockParamLimits `json:"bytes"`
-	Gas     BlockParamLimits `json:"gas"`
-	LtDelta BlockParamLimits `json:"lt_delta"`
-}
-
-// GetBytes returns the value of Bytes.
-func (s *BlockLimits) GetBytes() BlockParamLimits {
-	return s.Bytes
-}
-
-// GetGas returns the value of Gas.
-func (s *BlockLimits) GetGas() BlockParamLimits {
-	return s.Gas
-}
-
-// GetLtDelta returns the value of LtDelta.
-func (s *BlockLimits) GetLtDelta() BlockParamLimits {
-	return s.LtDelta
-}
-
-// SetBytes sets the value of Bytes.
-func (s *BlockLimits) SetBytes(val BlockParamLimits) {
-	s.Bytes = val
-}
-
-// SetGas sets the value of Gas.
-func (s *BlockLimits) SetGas(val BlockParamLimits) {
-	s.Gas = val
-}
-
-// SetLtDelta sets the value of LtDelta.
-func (s *BlockLimits) SetLtDelta(val BlockParamLimits) {
-	s.LtDelta = val
-}
-
 // Ref: #/components/schemas/BlockParamLimits
 type BlockParamLimits struct {
 	Underload int64 `json:"underload"`
@@ -3317,33 +3280,77 @@ func (s *BlockchainConfig21) SetGasLimitsPrices(val GasLimitPrices) {
 // The limits on the block in the masterchain, upon reaching which the block is finalized and the
 // callback of the remaining messages (if any) is carried over to the next block.
 type BlockchainConfig22 struct {
-	BlockLimits BlockLimits `json:"block_limits"`
+	Bytes   BlockParamLimits `json:"bytes"`
+	Gas     BlockParamLimits `json:"gas"`
+	LtDelta BlockParamLimits `json:"lt_delta"`
 }
 
-// GetBlockLimits returns the value of BlockLimits.
-func (s *BlockchainConfig22) GetBlockLimits() BlockLimits {
-	return s.BlockLimits
+// GetBytes returns the value of Bytes.
+func (s *BlockchainConfig22) GetBytes() BlockParamLimits {
+	return s.Bytes
 }
 
-// SetBlockLimits sets the value of BlockLimits.
-func (s *BlockchainConfig22) SetBlockLimits(val BlockLimits) {
-	s.BlockLimits = val
+// GetGas returns the value of Gas.
+func (s *BlockchainConfig22) GetGas() BlockParamLimits {
+	return s.Gas
+}
+
+// GetLtDelta returns the value of LtDelta.
+func (s *BlockchainConfig22) GetLtDelta() BlockParamLimits {
+	return s.LtDelta
+}
+
+// SetBytes sets the value of Bytes.
+func (s *BlockchainConfig22) SetBytes(val BlockParamLimits) {
+	s.Bytes = val
+}
+
+// SetGas sets the value of Gas.
+func (s *BlockchainConfig22) SetGas(val BlockParamLimits) {
+	s.Gas = val
+}
+
+// SetLtDelta sets the value of LtDelta.
+func (s *BlockchainConfig22) SetLtDelta(val BlockParamLimits) {
+	s.LtDelta = val
 }
 
 // The limits on the block in the basechains, upon reaching which the block is finalized and the
 // callback of the remaining messages (if any) is carried over to the next block.
 type BlockchainConfig23 struct {
-	BlockLimits BlockLimits `json:"block_limits"`
+	Bytes   BlockParamLimits `json:"bytes"`
+	Gas     BlockParamLimits `json:"gas"`
+	LtDelta BlockParamLimits `json:"lt_delta"`
 }
 
-// GetBlockLimits returns the value of BlockLimits.
-func (s *BlockchainConfig23) GetBlockLimits() BlockLimits {
-	return s.BlockLimits
+// GetBytes returns the value of Bytes.
+func (s *BlockchainConfig23) GetBytes() BlockParamLimits {
+	return s.Bytes
 }
 
-// SetBlockLimits sets the value of BlockLimits.
-func (s *BlockchainConfig23) SetBlockLimits(val BlockLimits) {
-	s.BlockLimits = val
+// GetGas returns the value of Gas.
+func (s *BlockchainConfig23) GetGas() BlockParamLimits {
+	return s.Gas
+}
+
+// GetLtDelta returns the value of LtDelta.
+func (s *BlockchainConfig23) GetLtDelta() BlockParamLimits {
+	return s.LtDelta
+}
+
+// SetBytes sets the value of Bytes.
+func (s *BlockchainConfig23) SetBytes(val BlockParamLimits) {
+	s.Bytes = val
+}
+
+// SetGas sets the value of Gas.
+func (s *BlockchainConfig23) SetGas(val BlockParamLimits) {
+	s.Gas = val
+}
+
+// SetLtDelta sets the value of LtDelta.
+func (s *BlockchainConfig23) SetLtDelta(val BlockParamLimits) {
+	s.LtDelta = val
 }
 
 // The cost of sending messages in the masterchain of the TON blockchain.
